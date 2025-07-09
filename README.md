@@ -17,8 +17,7 @@
 #### 步骤：
 1. 克隆仓库：
    ```bash
-   git clone <你的仓库地址>
-   cd <项目目录>
+   git clone https://github.com/xiaogui197/-web-food-gallery-app.git
    ```
 2. 用浏览器直接打开 `Codes/index.html` 或 `Codes/login.html`。
 3. 体验菜品浏览、图片上传、登录等功能。
