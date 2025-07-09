@@ -1,0 +1,19 @@
+# Node.js 依赖
+node_modules/
+
+# 日志文件
+*.log
+
+# 环境变量
+.env
+
+# 上传的临时和备份文件
+uploads/temp/
+uploads/backup/
+
+# 用户上传图片（如不需演示可忽略全部 uploads/users/）
+uploads/users/
+
+# 编辑器配置
+.vscode/
+.idea/ 

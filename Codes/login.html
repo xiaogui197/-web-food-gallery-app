@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美食网站 - 登录</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 装饰背景 -->
+    <div class="decorative-bg">
+        <i class="food-icon fas fa-utensils" style="top: 10%; left: 5%; font-size: 50px;"></i>
+        <i class="food-icon fas fa-pizza-slice" style="top: 25%; right: 10%; font-size: 60px;"></i>
+        <i class="food-icon fas fa-hamburger" style="top: 70%; left: 15%; font-size: 40px;"></i>
+        <i class="food-icon fas fa-coffee" style="bottom: 15%; right: 20%; font-size: 50px;"></i>
+        <i class="food-icon fas fa-ice-cream" style="top: 50%; left: 25%; font-size: 45px;"></i>
+        <i class="food-icon fas fa-apple-alt" style="bottom: 30%; left: 10%; font-size: 40px;"></i>
+        <i class="food-icon fas fa-bread-slice" style="top: 35%; left: 30%; font-size: 45px;"></i>
+        <i class="food-icon fas fa-drumstick-bite" style="bottom: 20%; right: 5%; font-size: 50px;"></i>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-utensils me-2"></i>美食天地
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dishes.html">
+                            <i class="fas fa-list me-1"></i>菜品列表
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="login.html">
+                            <i class="fas fa-user me-1"></i>登录
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 登录表单 -->
+    <div class="container mt-5 pt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 animate-on-scroll">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">欢迎回来</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">用户名</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    <input type="text" class="form-control" id="username" placeholder="请输入用户名" required="">
+                                </div>
+                                <div class="invalid-feedback">请输入用户名</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">密码</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                    <input type="password" class="form-control" id="password" placeholder="请输入密码" required="">
+                                    <button type="button" class="input-group-text" id="togglePassword">
+                                        <i class="fas fa-eye-slash"></i>
+                                    </button>
+                                </div>
+                                <div class="invalid-feedback">请输入密码</div>
+                            </div>
+                            <div class="mb-3 form-check d-flex justify-content-between">
+                                <div>
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">记住密码</label>
+                                </div>
+                                <a href="#" class="text-decoration-none text-muted">忘记密码?</a>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-sign-in-alt me-2"></i>登录
+                                </button>
+                                <a href="register.html" class="btn btn-outline-secondary">
+                                    <i class="fas fa-user-plus me-2"></i>注册新账号
+                                </a>
+                            </div>
+                        </form>
+                        
+                        <!-- 社交登录选项 -->
+                        <div class="text-center mt-4">
+                            <p class="text-muted">或使用以下方式登录</p>
+                            <div class="social-login">
+                                <a href="#" class="social-btn wechat-btn">
+                                    <i class="fab fa-weixin"></i>
+                                </a>
+                                <a href="#" class="social-btn weibo-btn">
+                                    <i class="fab fa-weibo"></i>
+                                </a>
+                                <a href="#" class="social-btn qq-btn">
+                                    <i class="fab fa-qq"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 图片上传区域（登录后显示） -->
+                <div id="uploadSection" class="card mt-4" style="display: none;">
+                    <div class="card-header">
+                        <h3 class="text-center">上传美食图片</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="uploadForm">
+                            <div class="mb-3">
+                                <label for="dishName" class="form-label">菜品名称</label>
+                                <input type="text" class="form-control" id="dishName" required="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="dishImage" class="form-label">选择图片</label>
+                                <div class="upload-area" id="uploadArea">
+                                    <input type="file" class="form-control" id="dishImage" accept="image/*" required="" style="display: none;">
+                                    <div class="upload-hint">
+                                        <i class="fas fa-cloud-upload-alt mb-2" style="font-size: 2rem;"></i>
+                                        <p>点击或拖拽图片到此处上传</p>
+                                        <p class="text-muted">支持JPG、PNG格式，最大5MB</p>
+                                    </div>
+                                    <div class="image-preview-container" style="display: none;">
+                                        <div class="image-preview-wrapper">
+                                            <img id="imagePreview" class="image-preview" src="" alt="预览图">
+                                        </div>
+                                        <div class="image-preview-controls">
+                                            <button type="button" class="btn btn-sm btn-outline-danger" id="removeImage">
+                                                <i class="fas fa-times"></i> 移除
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="dishDescription" class="form-label">菜品描述</label>
+                                <textarea class="form-control" id="dishDescription" rows="3" required=""></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">上传日期</label>
+                                <div class="upload-date">
+                                    <i class="fas fa-calendar"></i>
+                                    <span id="currentDate"></span>
+                                </div>
+                            </div>
+                            <div class="progress mb-3" style="display: none;">
+                                <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-success">
+                                    <i class="fas fa-upload me-2"></i>上传
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="text-center py-4 mt-5">
+        <p class="text-muted">© 2025 美食天地 - 分享你的美食故事&nbsp;&nbsp;</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html> 
