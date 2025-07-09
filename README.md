@@ -164,6 +164,7 @@ request-admin/        # 后台管理需求文档
 [BOB (xiaogui197) on GitHub](https://github.com/xiaogui197)
 
 - #### 微信：openbob（欢迎技术交流与合作，可定制需求） 
-- ![img](README.assets\74f0713d95ee0b512451ddbfdfee46f.jpg)
+![img](README.assets/74f0713d95ee0b512451ddbfdfee46f.jpg)
+
 - #### 给小哥加个鸡腿
-- ![img](README.assets\2868bd12ea6675337e1234640c2e917.jpg)
+![img](README.assets/2868bd12ea6675337e1234640c2e917.jpg)
