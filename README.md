@@ -33,7 +33,7 @@
 
 首页采用现代化的设计风格，顶部导航栏固定在页面顶部，方便用户随时访问其他页面。导航栏使用半透明背景，搭配阴影效果，提升视觉层次感。轮播图区域展示精选美食图片，每张图片配有标题和描述文字，增强视觉效果。精选推荐区域采用卡片式布局，展示特色菜品，卡片添加悬停放大效果，提升交互体验。具体界面实现如图4.1所示
 
-![img](D:\Codes\web2 - 副本\README.assets\clip_image002.jpg)
+![img](README.assets/clip_image002.jpg)
 
 ​                                                                                                                 图4.1 首页实现效果图
 
@@ -43,7 +43,7 @@
 
 菜品列表的界面实现如图4.2所示。
 
-![img](D:\Codes\web2 - 副本\README.assets\clip_image004.jpg)
+![img](README.assets/clip_image004.jpg)
 
 ​																										图4.2 菜品列表界面效果图
 
@@ -53,7 +53,7 @@
 
  
 
-![img](D:\Codes\web2 - 副本\README.assets\clip_image006.jpg)
+![img](README.assets/clip_image006.jpg)
 
 ​																									图4.3 编辑对话框效果图
 
@@ -61,7 +61,7 @@
 
 用户系统提供完整的用户管理功能，包括登录、注册和图片上传。登录页面设计简洁美观，采用Bootstrap样式实现表单布局。表单验证通过JavaScript实现，确保用户输入符合要求。登录界面实现效果如图4.4所示。
 
-![img](D:\Codes\web2 - 副本\README.assets\clip_image008.jpg)
+![img](README.assets/clip_image008.jpg)
 
 ​																									图4.4 用户登入界面效果图
 
@@ -69,7 +69,7 @@
 
 登录成功后，用户可以上传美食图片，系统支持图片预览和上传进度显示。图片上传功能界面效果如图4.5所示。
 
-![img](D:\Codes\web2 - 副本\README.assets\clip_image010.jpg)
+![img](README.assets/clip_image010.jpg)
 
 图4.5 图片上传界面效果图
 
